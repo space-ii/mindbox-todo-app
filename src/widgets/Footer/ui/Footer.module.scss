@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    font-size: 14px;
+    border-top: 1px solid #e6e6e6;
+    background: white;
+  }
+
+.filters {
+    display: flex;
+    gap: 8px;
+}
+
+.clearButton {
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-weight: normal;
+    transition: all 0.2s;
+
+    &:hover {
+      border: 1px solid #d1d1d1;
+    }
+  }

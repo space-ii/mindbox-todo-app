@@ -1,0 +1,20 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "moduleResolution": "node",
+      "module": "commonjs",
+      "jsx": "react-jsx",
+      "esModuleInterop": true,
+      "baseUrl": "./src",
+      "paths": {
+        "pages/*": ["pages/*"],
+        "features/*": ["features/*"],
+        "entities/*": ["entities/*"],
+        "shared/*": ["shared/*"],
+        "widgets/*": ["widgets/*"],
+        "app/*": ["app/*"]
+      },
+      "types": ["node", "jest", "@testing-library/jest-dom"],
+    },
+    "include": ["src"]
+  }
