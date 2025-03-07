@@ -1,54 +1,40 @@
-# React + TypeScript + Vite
+# Mindbox ToDo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-blue)](https://space-ii.github.io/mindbox-todo-app/)
 
-Currently, two official plugins are available:
+Тестовое задание для Mindbox — приложение для управления списком задач.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🚀 Демка проекта
+✅ [Посмотреть онлайн](https://space-ii.github.io/mindbox-todo-app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚙️ Стек технологий:
+- **Vite**
+- **React 19**
+- **TypeScript**
+- **Zustand** (стейт-менеджмент)
+- **SCSS Modules**
+- **Jest + Testing Library** (тесты)
+- Архитектура по **FSD**
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ✅ Основной функционал:
+- Добавление новых задач
+- Отметка задач как выполненные
+- Фильтрация задач (All / Active / Completed)
+- Очистка выполненных задач
+- Локальное состояние на Zustand
+- Тесты для ключевых компонентов и логики
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🧪 Команды для запуска проекта:
+```bash
+npm install      # Установка зависимостей
+npm run start      # Запуск проекта в dev-режиме
+npm run build    # Сборка проекта
+npm run preview  # Предпросмотр сборки
+npm run test     # Запуск тестов
+npm run deploy   # Деплой на GitHub Pages
